@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin:0 ;
+    padding:0;
+    font-family: 'Press Start 2P', cursive;
+    border: none ;
+}
+
+body{
+    background-color: black;
+}
+#game-intro{
+    margin: 0 auto;
+    background: url('../images/bg2.jpg');
+    width:640px;
+    height: 480px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+ 
+
+}
+#game-over{
+    margin: 0 auto;
+    background: url('../images/bg2.jpg');
+    width:640px;
+    height: 480px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    display:none;
+
+
+}
+
+#game-intro h1, #game-over h1,  #game-win h1{
+    padding-top: 30%;
+    color:rgb(216, 32, 32);
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+
+#game-intro h3, #game-over h3,  #game-win h3{
+color:yellow;
+text-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+button {
+    box-shadow: 1px 1px rgba(0,0,0,0.3);
+    padding: 5px 4px;
+    margin-top: 12px;
+    color:white;
+    background-color: brown;
+    border-radius: 5px;
+    border:none
+}
+button:hover{
+    background-color: rgb(98, 21, 21);
+}
+#game-container{
+    display: none;
+    width:640px;
+    height: 480px;
+    margin: 0 auto;
+    background: black;
+    color: aliceblue;
+    
+}
+#scoreboard{
+    display: flex;
+    justify-content: space-between;
+}
+#game-screen, #game-win{
+        margin: 0 auto;
+        background: url('../images/bg2.jpg');
+        width:640px;
+    height: 480px;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        position:relative;
+     
+    
+    
+}
+#game-win{
+    display: none;
+    border:none;
+}
+
+#namePlayer{
+    margin:0 auto;
+    display:none;
+    text-align: center;
+    line-height: 10px;
+}
+
+#scoreBoardTop{
+    margin: 0 auto;
+    color: aliceblue;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+}
+
+#list div{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 300px;
+}

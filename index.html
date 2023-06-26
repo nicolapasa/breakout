@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+    <div id="game-intro">
+
+            <h1>Breakout</h1>
+            <button id="start-game" type="button">Start Game</button>
+            <input type="text" id="namePlayer" placeholder="your name">
+
+    </div>
+    <div id="game-over">
+
+        <h1 id="screenTitle">Game Over</h1>
+        <h3>your Score <span id="finalScoreOver">0</span></h3>
+        <button id="restart-game" type="button">Restart Game</button>
+        <div id="scoreBoardTop">
+            <div id="list">
+                
+            </div>
+
+        </div>
+
+   </div>
+ 
+    <div id="game-container">
+             <div id="scoreboard">
+                <h2>Score <span id="score">0</span></h2>
+                <h2>Lives <span id="lives">3</span></h2>
+             </div>   
+             <div id="game-screen">
+
+             </div>
+            <!--<audio src="./sound/mega.mp3" autoplay></audio>-->
+            <button type="button" id="audioController">Stop Music</button>
+
+    </div>
+    <script src="./js/player.js"></script>
+    <script src="./js/ball.js"></script>
+    <script src="./js/block.js"></script>
+    <script src="./js/handler.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/sound.js"></script>
+    <script src="./js/savescore.js"></script>
+  <script src="./js/game.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
