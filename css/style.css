@@ -107,3 +107,36 @@ button:hover{
     justify-content: space-between;
     width: 300px;
 }
+.instructions {
+    padding: 5px;
+    width: 220px;
+    display: flex;
+
+    color:white;
+    margin: 0 auto;
+    flex-direction: column;
+    gap:10px;
+    background-color: rgba(177, 64, 124, 0.726);
+    margin-top: 15px;
+    box-shadow: 1px 1px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+.instructions img {
+    width: 30px;
+}
+
+#game-intro h5{color:white; 
+    padding-top: 50px;
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+.instruction {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+ 
+}
+.instruction div{
+    text-align: left;
+    width: 100px;
+}
