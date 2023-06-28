@@ -86,6 +86,7 @@ class Ball{
         this.game.lives-=1
         if(this.game.lives<=0){
           this.game.isGameOver=true
+          this.game.isEnd=true
         }
         return true;
     }

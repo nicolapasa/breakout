@@ -28,6 +28,7 @@ class Game{
         this.gameWin=false
         this.soundOn=true
         this.name =''
+        this.isEnd=false
 
     }
 
@@ -108,7 +109,8 @@ class Game{
 
         if(this.blocks.length===0) {
             this.gameWin=true 
-            this.endGame()
+           // this.endGame()
+           this.isEnd=true
         }
 
     }
@@ -116,7 +118,7 @@ class Game{
 
     gameLoop(){
         
-        if(!this.isGameOver){
+        if(!this.isEnd ){
             this.update()
             requestAnimationFrame(()=>{
                 this.gameLoop()

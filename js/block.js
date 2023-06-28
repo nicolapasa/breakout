@@ -41,6 +41,7 @@ class Block{
            
          
               this.game.isGameOver=true
+              this.game.isEnd=true
             
             return true;
         }
