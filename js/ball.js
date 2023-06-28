@@ -8,7 +8,7 @@ class Ball{
         this.width=12
         this.height=12
 
-        this.speed=3
+        this.speed=4
         this.speedy =-this.speed
         this.speedx = this.speed * (Math.random() * 2 - 1); 
         this.toDeleting=false  

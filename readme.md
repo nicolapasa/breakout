@@ -28,6 +28,7 @@ Breakout is a clone of a famous arcade game from Atari. There is a brick wall th
 - Optimized trajectories of the ball.
 - Improving the UI and adding music and sound effects.
 - Adding a top score list.
+- Adding backgrounds layers parallax
 - Making the game 
 
 # Technologies Used
@@ -82,6 +83,9 @@ Breakout is a clone of a famous arcade game from Atari. There is a brick wall th
   - initGame
   - saveScore 
   - loadScore 
+- background.js 
+  - move
+  - update  
 
 
 ## Links

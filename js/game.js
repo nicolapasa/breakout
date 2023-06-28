@@ -58,7 +58,7 @@ class Game{
             }
           
         } 
-        for (let i = 5; i < 8; i++) {
+        for (let i = 5; i < 7; i++) {
             for (let j = 1; j < 17; j++) {
                 this.blocks.push(new Block(this, j*35, i*18, './images/bricks1.png', 300, true))
             }
