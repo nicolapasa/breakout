@@ -20,6 +20,13 @@ class Game{
         this.ui=new UI(this)
         this.blockSound=new Sound(this, './sound/block.wav')
         this.musicGame=new Sound(this, './sound/mega.mp3')
+        this.planet=new Background(this, './images/planet.png', 0, 78, 0.02)
+        this.cloud1=new Background(this, './images/cloud1.png', 0, 200, 0.5)
+        this.cloud3b=new Background(this, './images/cloud3.png', 0, 300, 0.2)
+        this.ironman=new Background(this, './images/iron.png', 0, 50, 0.4)
+        this.cloud2=new Background(this, './images/cloud2.png', 0, 130, 0.2)
+        this.cloud3=new Background(this, './images/cloud3.png', 0, 100, 0.1)
+
         this.save=new Save(this)
         this.isGameOver=false
         this.blocks=[]
@@ -39,20 +46,20 @@ class Game{
         this.name=this.namePlayerInput.value
         this.save.initGame()
         for (let i = 0; i < 3; i++) {
-            for (let j = 1; j < 16; j++) {
+            for (let j = 1; j < 17; j++) {
                
                 this.blocks.push(new Block(this, j*35, i*18, './images/bricksYellow.png', 200, false))
             }
           
         } 
         for (let i = 3; i < 5;i++) {
-            for (let j = 1; j < 16; j++) {
+            for (let j = 1; j < 17; j++) {
                 this.blocks.push(new Block(this, j*35, i*18, './images/bricksPurple.png', 200, false))
             }
           
         } 
         for (let i = 5; i < 8; i++) {
-            for (let j = 1; j < 16; j++) {
+            for (let j = 1; j < 17; j++) {
                 this.blocks.push(new Block(this, j*35, i*18, './images/bricks1.png', 300, true))
             }
           
@@ -60,6 +67,7 @@ class Game{
         this.gameLoop()
     }
     update(){
+        
         this.soundController()
         this.player.move()
         this.handler.update()
@@ -79,15 +87,15 @@ class Game{
                            
                             this.score+=block.score
                         }
-                       
-                        const hitFromLeft = () => ball.left + 2  - ball.speedx <= block.left;
+                        ball.speedy = -ball.speedy;
+                    /*    const hitFromLeft = () => ball.left + 2  - ball.speedx <= block.left;
                         const hitFromRight = () => ball.left - ball.speedx >= block.left + block.width;
                        // ball.changeDirection()
                        if (hitFromLeft() || hitFromRight()) {
                         ball.speedx  = -ball.speedx;
                       } else { // Hit from above or below
-                        ball.speedy = -ball.speedy;
-                      }
+                       ball.speedy = -ball.speedy;
+                      }*/
                     
                        
                     }
@@ -112,7 +120,12 @@ class Game{
            // this.endGame()
            this.isEnd=true
         }
-
+        this.planet.move()
+        this.cloud1.move()
+        this.cloud2.move()
+        this.ironman.move()
+        this.cloud3.move()
+        this.cloud3b.move()
     }
 
 
@@ -149,7 +162,7 @@ class Game{
 
     soundController(){
         this.btnAudioController.addEventListener('click', (event)=>{
-            event.preventDefault()
+          
             if(this.soundOn){
               this.musicGame.stop()
               this.btnAudioController.innerText='Play Music'
