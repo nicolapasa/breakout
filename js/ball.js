@@ -72,9 +72,13 @@ class Ball{
    
   changeDirection(){
   
-   // this.speedy = -this.speedy;
+   
     this.speedy =-this.speed
     this.speedx = this.speed * (Math.random() * 2 - 1); 
+
+   
+     
+
   }
 
   checkBallOut(){

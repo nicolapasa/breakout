@@ -28,12 +28,12 @@ class Save{
 
        let minValue = Math.min(...this.topScore.map(item => item.score));
        
-       // Check if the object's value is greater than the minimum value
+
        if (obj.score > minValue) {
-         // Find the index of the minimum value
+    
          let minIndex = this.topScore.findIndex(item => item.score === minValue);
      
-         // Replace the minimum value with the new object
+
          this.topScore.splice(minIndex, 1, obj);
        }
    

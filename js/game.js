@@ -88,14 +88,7 @@ class Game{
                             this.score+=block.score
                         }
                         ball.speedy = -ball.speedy;
-                    /*    const hitFromLeft = () => ball.left + 2  - ball.speedx <= block.left;
-                        const hitFromRight = () => ball.left - ball.speedx >= block.left + block.width;
-                       // ball.changeDirection()
-                       if (hitFromLeft() || hitFromRight()) {
-                        ball.speedx  = -ball.speedx;
-                      } else { // Hit from above or below
-                       ball.speedy = -ball.speedy;
-                      }*/
+                    
                     
                        
                     }
