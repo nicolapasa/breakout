@@ -162,7 +162,7 @@ class Game{
 
     soundController(){
         this.btnAudioController.addEventListener('click', (event)=>{
-          
+          this.btnAudioController.blur()
             if(this.soundOn){
               this.musicGame.stop()
               this.btnAudioController.innerText='Play Music'

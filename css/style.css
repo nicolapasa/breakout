@@ -4,8 +4,11 @@
     padding:0;
     font-family: 'Press Start 2P', cursive;
     border: none ;
+    outline: none;
 }
-
+.button:focus {
+    outline: none;
+  }
 body{
     background-color: black;
 }
